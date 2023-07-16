@@ -1,0 +1,102 @@
+.single_pkg {
+  padding: 50px 28px;
+  border: 1px solid var(--color-primary);
+  border-radius: 15px;
+
+  .single_pkg_header {
+    h4 {
+      font-size: 23px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 500;
+      color: #8b8b8b;
+      margin-bottom: 30px;
+    }
+    h3 {
+      font-size: 39px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      span {
+        font-size: 32px;
+        font-weight: 500;
+      }
+    }
+    button {
+      background-color: var(--color-primary);
+      border: 1px solid var(--color-primary);
+      border-radius: 10px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 500;
+      height: 60px;
+      width: 100%;
+      background-image: url("/images/fire.png");
+      background-repeat: no-repeat;
+      background-position: center left 20px;
+      background-size: auto;
+    }
+  }
+  .single_pkg_body {
+    margin: 30px 0;
+    max-height: 400px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    &::-webkit-scrollbar {
+      width: 9px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #00000021;
+      border-radius: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #8b8b8b;
+      border-radius: 5px;
+    }
+    h5 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .single_pkg_list {
+      display: block;
+      width: auto;
+      margin: 0 0 21px 0;
+      .single_pkg_list_item {
+        list-style-type: none;
+        background-image: url("/images/tick.png");
+        background-repeat: no-repeat;
+        background-position: top 5px left;
+        background-size: auto;
+        padding-left: 30px;
+        color: #8b8b8b;
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+  }
+  .single_pkg_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .phone {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--color-primary);
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 10px;
+      }
+    }
+    .chat {
+      font-size: 17px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}

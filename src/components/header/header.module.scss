@@ -1,0 +1,182 @@
+.header_wrapper {
+  background-color: #171717;
+  padding: 9.5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #8b8b8b;
+  border-radius: 15px;
+  .logo {
+    width: 91.57px;
+    height: 34.05px;
+    position: relative;
+    margin-left: 20px;
+  }
+  .header_right {
+    display: flex;
+    align-items: center;
+    .phone {
+      span {
+        color: #fff;
+        font-weight: bold;
+        margin-left: 10px;
+        font-size: 13px;
+        letter-spacing: 0.39px;
+      }
+    }
+    .consultation {
+      display: flex;
+      align-items: center;
+      margin-left: 40px;
+      .consultation_img {
+        margin-right: 7px;
+      }
+      .consultation_content {
+        color: #fff;
+        small {
+          display: block;
+          font-size: 7px !important;
+          font-weight: 500;
+          letter-spacing: 0.7px;
+          color: #ffffff;
+          text-transform: uppercase;
+          margin-bottom: 2px;
+        }
+        h5 {
+          font-size: 12px;
+          font-weight: 300;
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .header_CTA {
+      margin-left: 68px;
+      background-color: var(--color-primary);
+      color: #fff;
+      font-weight: 500;
+      font-size: 15px;
+      border: 0;
+      border-radius: 10px;
+      padding: 11.5px 20px;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+
+      img {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  //   mobile
+  .mobile_menu_icon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header_wrapper {
+    .header_right {
+      display: none;
+    }
+    .logo {
+      margin-left: 0;
+    }
+    .mobile_menu_icon {
+      display: block;
+      .hamburger_icon {
+        background: var(--bg-gradiant);
+        display: block;
+        border-radius: 6px;
+        border: 0;
+        svg {
+          width: 50px;
+          height: 40px;
+          fill: #fff;
+        }
+      }
+      .mobile_menu {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        position: relative;
+        .logo {
+          position: absolute;
+          top: 30px;
+          width: 60%;
+          img {
+            width: 100%;
+          }
+        }
+        .phone {
+          background: var(--bg-gradiant);
+          padding: 8px 20px;
+          display: flex;
+          align-items: center;
+          border-radius: 50px;
+          span {
+            color: #fff;
+            font-weight: bold;
+            margin-left: 10px;
+            font-size: 15px;
+            letter-spacing: 0.39px;
+          }
+        }
+        .consultation {
+          display: flex;
+          align-items: center;
+          margin: 50px 0;
+          .consultation_img {
+            margin-right: 10px;
+          }
+          .consultation_content {
+            color: #000;
+            small {
+              display: block;
+              font-size: 15px !important;
+              font-weight: 500;
+              letter-spacing: 0.7px;
+              color: #000;
+              text-transform: uppercase;
+              margin-bottom: 2px;
+            }
+            h5 {
+              font-size: 20px;
+              font-weight: 300;
+              span {
+                font-weight: 600;
+              }
+            }
+          }
+        }
+        .header_CTA {
+          background-color: var(--color-primary);
+          color: #fff;
+          font-weight: 500;
+          font-size: 15px;
+          border: 0;
+          border-radius: 10px;
+          padding: 11.5px 20px;
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
+
+          img {
+            margin-left: 15px;
+          }
+        }
+      }
+
+      &:global(.offcanvas-body) {
+        background: #000 !important;
+      }
+      //   .offcanvas_body {
+      //     background: #000 !important;
+      //   }
+    }
+  }
+}
